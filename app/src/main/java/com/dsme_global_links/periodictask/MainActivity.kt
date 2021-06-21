@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
         runnable = Runnable { // do some task on delay
             // do the task after delay specified time
             doTask(handler)
@@ -76,10 +77,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        // edit according to need
         super.onDestroy()
     }
 
     override fun onPause() {
+        // edit according to need
         super.onPause()
     }
 }
